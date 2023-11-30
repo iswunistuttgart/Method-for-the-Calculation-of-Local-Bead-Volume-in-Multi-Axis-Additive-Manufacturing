@@ -1,0 +1,14 @@
+voxelsize: 0.1
+filament_diameter: 1.75
+interpolate_length: 1
+
+bead:
+  shape: 'ellipse'
+  width:
+    minimal: 0.3
+    nominal: 0.5
+    maximal: 0.9
+  height:
+    minimal: 0.1
+    nominal: 0.3
+    maximal: 0.5

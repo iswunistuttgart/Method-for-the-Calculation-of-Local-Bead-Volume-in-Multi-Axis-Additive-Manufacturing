@@ -1,0 +1,6 @@
+gcodeparser
+numpy
+plotly
+pyyaml
+scipy
+trimesh

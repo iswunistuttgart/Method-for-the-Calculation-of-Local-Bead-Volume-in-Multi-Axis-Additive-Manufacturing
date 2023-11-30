@@ -1,0 +1,3 @@
+Stanford Bunny Model - (c) 1996 Stanford University - http://www.graphics.stanford.edu/data/3Dscanrep/
+
+Re-oriented and re-scaled from the original mesh
