@@ -421,7 +421,7 @@ def get_adjusted_segment_volume(
     adjusted_volume: float = 0.0
     if calculated_volume < V_min:
         adjusted_volume = V_min
-    elif abs(calculated_volume - V_noN) < 0.1:
+    elif abs(calculated_volume - V_noN) < 0.001:
         adjusted_volume = calc_analytical_volume(w_nom, h_nom, length)
     else:
         adjusted_volume = calculated_volume
