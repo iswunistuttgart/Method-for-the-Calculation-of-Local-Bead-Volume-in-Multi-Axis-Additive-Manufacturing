@@ -73,7 +73,7 @@ def write_report(filename: str, pairs: List[Tuple[GcodeLine, PathSegment]], voxe
         for i, (_, seg) in enumerate(pairs):
             if isinstance(seg, PrintSegment):
                 report.write(
-                    f"{i};{seg.length:.2f};{seg.slicer_volume:.2f};{seg.calculated_volume:.2f};{seg.adjusted_volume:.2f};{len(seg.occupying_voxels_indices[0])};{seg.num_shared_voxels};{(seg.calculated_volume - seg.slicer_volume):.2f};{(seg.calculated_volume - seg.slicer_volume)*100/seg.slicer_volume:.2f};{seg.slicer_volume / seg.length:.2f};{seg.calculated_volume /seg.length:.2f};{seg.adjusted_volume/seg.length:.2f}\n".replace(
+                    f"{i};{seg.length:.6f};{seg.slicer_volume:.6f};{seg.calculated_volume:.6f};{seg.adjusted_volume:.6f};{len(seg.occupying_voxels_indices[0])};{seg.num_shared_voxels};{(seg.calculated_volume - seg.slicer_volume):.6f};{(seg.calculated_volume - seg.slicer_volume)*100/seg.slicer_volume:.6f};{seg.slicer_volume / seg.length:.6f};{seg.calculated_volume /seg.length:.6f};{seg.adjusted_volume/seg.length:.6f}\n".replace(
                         ".", ","
                     )
                 )
